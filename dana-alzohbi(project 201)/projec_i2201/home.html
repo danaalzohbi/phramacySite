@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .homeback{
+            background-image: url(R.jpeg);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }/*-----------------------------for the backgroung img------------------------------------------*/
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5%;
+        }/*-----------------------------for the navigation style------------------------------------------*/
+        .logo{
+            width: 15%;
+            height: 15%;
+        }
+       .link{
+        font-size:x-large;
+       color: black;
+       text-decoration: none;
+       font-family: cursive;
+       
+      margin: 10px;
+       }
+       .link:hover{
+        border-bottom: 5px solid rgb(168, 111, 102);cursor: pointer;
+       }/*-----------------------------for the center------------------------------------------*/
+       .welcome{
+        font-size:30px;
+        font-family: cursive;
+        display: grid;
+        justify-content: center;
+       }
+       .h1{
+        font-size: 60px;
+        font-family: cursive;
+        
+       }
+
+    </style>
+</head>
+<body>
+    <div class="homeback">
+<div class="navbar"> 
+    <img src="logo.png" alt="logo" class="logo">
+   <p><span id="home" class="link">Home</span>
+    <span id="adult" class="link">Products</span>
+    <span id="About" class="link">About</span>
+    <span id="contact" class="link">Contact us</span>
+</p>
+  
+</p>
+   </p>
+</div>
+<!--------------------------------the end of the nav------------------------------------->
+<div class="welcome">
+ <span class="h1"> Welcome To our pharmacy!</span><br><br>
+ We are excited about the opertunity to serve you for all your pharmacy needs.<br>We want to make your Experience to us as comfortable and convinent aspossible.
+
+</div>
+<!--------------------------------------------------------------------------->
+    </div>
+    <!----------------------------------------------------------------------->
+    <script>//code java for open the site
+    document.getElementById("home").addEventListener("click",function(e){
+      
+    });
+    document.getElementById("adult").addEventListener("click",function(e){
+        window.open("products.html");
+    });
+    document.getElementById("About").addEventListener("click",function(e){
+        window.open("about.html");
+    });
+    document.getElementById("contact").addEventListener("click",function(e){
+        window.open("contact.html");
+    });
+    /*--------------------------------------------------------------------------*/
+    </script>
+</body>
+</html>
