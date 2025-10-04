@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+.visa-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  width:25%;
+  height:275px;
+  background-image: radial-gradient(
+    circle 897px at 9% 80.3%,
+    rgba(55, 60, 245, 1) 0%,
+    rgba(234, 161, 15, 0.9) 100.2%
+  );
+  border-radius: 10px;
+  padding: 20px;
+  margin-left:20.5%;
+  margin-top:10.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  gap: 15px;
+}
+.logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: fit-content;
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+.svgLogo {
+  height: 40px;
+  width: auto;
+}
+.inputstyle::placeholder {
+  color: white;
+}
+.inputstyle {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  caret-color: red;
+  font-size: 15px;
+  height: 25px;
+  letter-spacing: 1.5px;
+}
+.num {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+#cardNumber {
+  width: 100%;
+  height: 25px;
+}
+.info {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  gap: 10px;
+}
+.name {
+  width: 60%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.expiry,
+.cvv {
+  width: 30%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.cvv {
+  width: 10%;
+}
+#expiry,
+#cvv {
+  width: 100%;
+}
+.input-label {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: white;
+  width: 100%;
+}
+#flex{
+    display: flex;
+
+}
+/*-------------------------------------------- end of credit card --------------------------------------------------------------------------*/
+/*--------------------------------------------------stylimg of the inputs ----------------------------------------------------------------------------------------*/
+.inp{
+    margin-top:10.5%;
+    padding: 10px;
+    border: 2px solid rgb(168, 111, 102);
+    border-radius: 20px;
+    width:20%;
+ height: 280px;
+  margin-left:30px;
+  position: relative;
+}
+
+.input {
+  background-color: #292929;
+  border: 1px solid #3e3e3e;
+  border-radius: 8px;
+  color: #fff;
+  padding: 14px 24px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 12px 14px;
+  cursor: pointer;
+  height: 15px;
+  width: 170px;
+}
+
+.input:hover {
+  border: 1px solid rgb(168, 111, 102);
+}
+.input1 {
+  width:170%;
+  height: 20px;
+  border:none;
+  outline:none;
+  font-size: 0.9em;
+  caret-color: rgb(255, 81, 0);
+  background-color: #292929;
+  font-weight: 600;
+  color: white;
+}
+
+.visaCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 25px;
+  background-color: #292929;
+  pointer-events: none;
+  border: 1px solid transparent;
+  border-radius: 7px;
+}
+.InputContainer {
+  height: 45px;
+  width:195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:  #292929;
+  overflow: hidden;
+  padding: 0px 5px 0px 15px;
+  margin-left: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.322);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+.password {
+  display: flex;
+  align-items: center;
+ 
+  gap: 10px;
+}
+.password input {
+  width: 5%;
+  margin-right: 0.5px;
+  height: 3px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px rgb(168, 111, 102);
+  font-size: 20px;
+  margin-top: 3px;
+  color:  #292929;
+  outline: none;
+  
+}
+/*------------------------------------------------------------end of styling for inputs and the style of submit button-------------------------------------------------------------------------------*/
+#submit{
+  background-color: rgb(168, 111, 102);
+  border-color:black;
+  width: 10%;
+  height: 10%;
+  padding: 20px;
+  margin-left: 45%;
+  margin-top: 3%;
+  border-radius: 20px;
+}
+#submit:hover{
+  background-color:rgba(255,200,255);
+}
+/*-------------------for the resize of the screen ---------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 600px) {
+            .visa-card{
+                margin-left: 15px;
+                width: 60%;
+            }
+            #flex{
+                flex-direction: column-reverse;
+            }
+            .inp{
+              width: 60%;
+            }
+        }
+    </style>
+</head>
+<body style="background-color :rgb(232, 194, 191);font-family: cursive;">
+    <h1 style="background-color:rgb(168, 111, 102) ;text-align: center;font-style: italic;">Card information</h1>
+    <div id="flex"> 
+    
+   <div class="visa-card">
+        <div class="logo" style="top:10px;">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="23"
+            height="23"
+            viewBox="0 0 48 48"
+            class="svgLogo"
+          >
+            <path
+              fill="#ff9800"
+              d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z"
+            ></path>
+            <path
+              fill="#d50000"
+              d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z"
+            ></path>
+            <path
+              fill="#ff3d00"
+              d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z"
+            ></path>
+          </svg>
+        </div>
+        <div class="num">
+          <label class="input-label">CARD NUMBER</label>
+          <input
+            class="inputstyle"
+            id="cardNumber"
+            placeholder="XXXX-XXXX-XXXX"
+            name="cardNumber"
+            type="text"
+            disabled
+          />
+        </div>
+      
+        <div class="info">
+          <div class="name">
+            <label class="input-label" >Name</label>
+            <input
+              class="inputstyle"
+              id="holderName"
+              placeholder="NAME"
+              type="text"
+              disabled
+            />
+          </div>
+      
+          <div class="expiry">
+            <label class="input-label">VALID THRU</label>
+            <input class="inputstyle" id="expiry" placeholder="MM/YY" type="text" disabled />
+          </div>
+          <div class="cvv">
+            <label class="input-label" >CVV</label>
+            <input
+              class="inputstyle"
+              placeholder="*"
+              maxlength="3"
+              id="cvv"
+              type="text"
+              disabled
+            />
+          </div>
+        </div>
+      </div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------->
+<div class="inp">
+    <p> <input type="text" placeholder="enter your name" id="nam" class="input"/></p>
+    <div class="InputContainer">
+      <input placeholder="xxxx-xxxx-xxxx"  class="input1" name="text" type="text" id="cardnumb" >
+    <div class="visaCard">
+      <svg viewBox="0 0 48 48" height="23" width="23" y="0px" x="0px" xmlns="http://www.w3.org/2000/svg" class="logo">
+      <path d="M32 10A14 14 0 1 0 32 38A14 14 0 1 0 32 10Z" fill="#ff9800"></path><path d="M16 10A14 14 0 1 0 16 38A14 14 0 1 0 16 10Z" fill="#d50000"></path><path d="M18,24c0,4.755,2.376,8.95,6,11.48c3.624-2.53,6-6.725,6-11.48s-2.376-8.95-6-11.48 C20.376,15.05,18,19.245,18,24z" fill="#ff3d00"></path>
+      </svg>
+    </div>
+  </div>
+  <!---------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <p> <input type="text" placeholder="enter the expiry date" id="expirydate" class="input"/></p>
+      <!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <div class="password">
+  <input maxlength="1" placeholder="1" class="input" name="text" type="text" id="p1" onchange="p2.focus();cvv.value=p1.value;"/>
+  <input maxlength="1"  placeholder="2" class="input" name="text" type="text" id="p2" onchange="p3.focus();cvv.value+=p2.value"/>
+  <input maxlength="1"  placeholder="3" class="input" name="text" type="text" id="p3" onchange="cvv.value+=p3.value"/>
+</div> 
+</div> 
+  <!---------------------------------------------------------------------------------------------------------------------------------------------------------->
+  <!--------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    </div>
+    <button id="submit">BUY</button>
+    <br><br><br><br><br>
+    <h1 style="background-color: rgb(168, 111, 102) ; color:rgb(168, 111, 102);margin-top:-60px;">---</h1>
+    <script>
+        var flex=document.getElementById("flex");
+        var i1=document.getElementById("nam");
+        var i2=document.getElementById("cardnumb");
+        var i3=document.getElementById("expirydate");
+        var i4=document.getElementById("p1");
+        var i5=document.getElementById("p2");
+        var i6=document.getElementById("p3");
+        var icard =document.getElementsByClassName("InputContainer")[0];
+     
+        var c1=document.getElementById("holderName");
+        var c2 = document.getElementById("cardNumber");
+        var c3=document.getElementById("expiry");
+        var c4=document.getElementById("cvv");
+
+  i1.addEventListener("keyup",function(){
+    c1.value=i1.value;
+  });
+i2.addEventListener("keyup",function(){
+    c2.value=i2.value;
+});
+  i3.addEventListener("keyup",function(){
+    c3.value=i3.value;
+  });
+  /*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ 
+    document.getElementById("submit").addEventListener("click",function(e){
+
+    if(i1.value=="" || i2.value=="" || i3.value=="" || i4.value=="" || i5.value=="" || i6.value=="")
+      alert("please enter all fileds");
+
+    else if(i1.value.search(/[1-9]/)!=-1)
+    {
+      i1.style.borderColor="red";
+      alert("your name doesn't contain a number");
+    }
+
+    else if(i2.value.search(/[A-Z]/)!=-1)
+    {
+      alert("the card number must not contain letters");
+      icard.style.borderColor="red";
+    }
+
+    else if(i2.value.search(/[a-z]/)!=-1)
+    {
+      alert("the card number must not contain letters");
+      icard.style.borderColor="red";
+    }
+    else if(i2.value.search(/[0-9]{4}-[0-9]{4}-[0-9]{4}/)==-1)
+    {
+      alert("the card number must be in form xxxx-xxxx-xxxx");
+      icard.style.borderColor="red";
+    }
+
+    else if(i3.value.search(/[0-9]{2}-[0-9]{2}-[0-9]{4}/)==-1)
+    {
+      alert("the date must be in form dd-dd-dddd");
+      i3.style.borderColor="red";
+    }
+    else if(i4.value.search(/[0-9]/)==-1 || i5.value.search(/[0-9]/)==-1 || i6.value.search(/[0-9/]/)==-1)
+    {
+      alert("the password must contain a digit");
+      i4.style.borderColor="red";
+      i5.style.borderColor="red";
+      i6.style.borderColor="red";
+    }
+
+    else 
+    {
+      alert("all are correct thanks");
+      window.open("Donecard.html");
+    }
+    });
+
+i1.addEventListener("blur",function(){
+  i1.style.borderColor="#3e3e3e";
+});   
+i2.addEventListener("blur",function(){
+  icard.style.borderColor="rgba(255, 255, 255, 0.322)";
+});    
+i3.addEventListener("blur",function(){
+  i3.style.borderColor="#3e3e3e";
+});  
+i6.addEventListener("blur",function(){
+  i4.style.borderColor="rgb(168, 111, 102)";
+  i5.style.borderColor="rgb(168, 111, 102)";
+  i6.style.borderColor="rgb(168, 111, 102)";
+});
+
+</script>
+</body>
+</html>
+

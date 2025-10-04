@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:rgb(232, 194, 191);
+            text-align: center;
+            color:black;
+            font-family: cursive;
+        }
+/*(1)<!----------------------------------------------------------------------->*/
+        #nav{
+            display:flex;
+            align-items: center;
+        }
+        #bnav{
+            display: flex;
+            margin-top: 0px;
+        }
+        #children , #home , #adult ,#contact {
+            margin:20px;
+            font-size:120%;
+        }
+        #children:hover , #home:hover, #adult:hover , #contact:hover{
+        border-bottom: 5px solid rgb(168, 111, 102);
+        cursor: pointer;
+    }
+    #buy:hover , #next:hover, #pri:hover ,.buy:hover ,.next:hover,.pri:hover{
+
+        cursor: pointer;
+    }    
+/*(2)<!----------------------------------------------------------------------->*/
+#items,#items1 {
+    border:2px solid rgb(168, 111, 102);
+    margin-left:2%;
+    width:30%;
+    height:400px;
+    border-radius: 8px;
+    text-align: center;
+   
+}
+#flex{
+    display:flex;
+    justify-content: space-around;
+    border-top:2px solid rgb(219, 139, 144) ;
+}
+#title {
+    width:40%;
+}
+.title {
+    width:40%;
+}
+p{
+    padding:2%;
+    font-size:90%;
+    font-weight: bold;
+}
+#pn{
+    display:flex;
+    justify-content: space-between;
+}
+/*<!----------------------------------------------------------------------->*/
+#bigdiv {
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+#card {
+    display:none;
+    border:2px dashed rgb(168, 111, 102);
+    width: 20%;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+    text-align: center;
+    margin-left:2%;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    height:100%;
+}
+#h11{
+    border-bottom:2px solid rgb(232, 194, 191); 
+}
+#f1{
+    display: flex;
+    justify-content: space-around;
+}
+/*<!----------------------------------------------------------------------->*/
+#b1{
+    width: 60%;
+    height: 50px;
+    background-color:rgb(219, 139, 144);
+    color: black;
+    border-color: black;
+    border-radius: 8px;
+}
+.stomach{
+    width: 40%;
+}
+#tit{
+    background-color: rgb(168, 111, 102);
+}
+@media only screen and (max-width: 600px) {
+    #children , #home , #adult ,#contact {
+        margin: 5px;
+    }
+    #items{
+        width: 100%;
+        height:320px;
+    }
+    #items1{
+        width: 100%;
+        height:280px;
+    }
+   h3{
+    font-size: medium;
+   }
+   #buy , #next, #pri ,.buy ,.next,.pri{
+    width:30px;
+   }
+}
+
+    </style>
+</head>
+<body>
+    <div id="bdiv">
+<!----------------------------------------------------------------------->
+<div id="bnav">       
+<div id="nav">
+    <img style="width:25%;" src="logo.png"><p><span id="home">Home</span><span id="children">Products</span><span id="adult">About</span><span id="contact">Contactus</span></p>
+</div>
+<img style="width:3%;height:3%;margin-top:3%;margin-left: 30%;" onclick="open1()" src="p5.png">
+</div>
+<!----------------------------------------------------------------------->
+<h1 id="tit">For children</h1>
+<div id="bigdiv">
+<!----------------------------------------------------------------------->
+<div id="items">
+    <h3><u>For Cold And Flu</u> :</h3>
+    <img id="title" class="title" src="childre_cold1.png"><span id="pn"><img id="pri"  style="transform:rotate(-90deg);" onclick="m2()"  src="close.png"><img id="buy" onclick="buy(title0,img0,price)" style="width:10%;"  src="cart-plus.svg"><img id="next" src="open.png" onclick="m1()"></span>
+    <div id="flex">
+        <p><u>Name</u> :</p>
+        <p><u>Price</u> :</p>
+    </div>
+    <div id="flex">
+    <p id="text">Cold and flu</p>
+    <p id="price">20 </p>
+    </div>
+</div>
+<!----------------------------------------------------------------------->
+<!----------------------------------------------------------------------->
+<div id="items">
+    <h3><u>For stomachache</u> :</h3>
+    <img class="title" id="title1" src="children stomac2.png"><span id="pn"><img class="pri" style="transform:rotate(-90deg);" onclick="s2()"  src="close.png"><img class="buy" onclick="buy(title10,img0,stomacprices)" style="width:10%;"  src="cart-plus.svg"><img class="next" src="open.png" onclick="s1()"></span>
+    <div id="flex">
+        <p><u>Name</u>: </p>
+        <p><u>Price</u> :</p>
+    </div>
+    <div id="flex">
+    <p id="text1">wellement oganic gripe water</p>
+    <p id="price1">30</p>
+    </div>
+</div>
+<!----------------------------------------------------------------------->
+<!----------------------------------------------------------------------->
+<div id="items">
+    <h3><u> Panadol</u> :</h3>
+    <img class="title" id="title2" src="panadol1.png"><span id="pn"><img class="pri" style="transform:rotate(-90deg);" onclick="p2()" src="close.png"><img class="buy" onclick="buy(title20,img0,panadolprice)" style="width:10%;"  src="cart-plus.svg"><img class="next" src="open.png" onclick="p1()"></span>
+    <div id="flex">
+        <p><u>Name</u> :</p>
+        <p><u>Price</u> :</p>
+    </div>
+    <div id="flex">
+    <p id="text2">Panadol for baby</p>
+    <p id="price2">15</p>
+    </div>
+</div>
+<!----------------------------------------------------------------------->
+<!----------------------------------------------------------------------->
+<!----------------------------------------------------------------------->
+<div id="items2">
+</div>
+<!----------------------------------------------------------------------->
+<div id="card">
+    <div id="f1">
+    <h1 id="h11">Your card</h1><img onclick="close1()" src="x-circle.svg">
+    </div>
+    <div id="baughted">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    <img src="" alt="" class="img">
+    </div>
+    <div>
+        <div class="total">
+            <div>Total</div>
+        </div>
+        <div id="paytotal">0</div>
+        <button id="b1" onclick="take()"> BUY </button>
+    </div>
+</div>
+<!----------------------------------------------------------------------->
+<!----------------------------------------------------------------------->
+<!----------------------------------------------------------------------->
+</div>
+<h1 id="tit">For Adult</h1>
+<div id="bigdiv">
+    <!----------------------------------------------------------------------->
+    <div id="items1">
+        <h3><u>For Diabetics</u> :</h3>
+        <img id="title3" class="title" src="diabetics1.png"><span id="pn"><img id="pri" style="transform:rotate(-90deg);" onclick="d2()"  src="close.png"><img id="buy" onclick="buy(title30,img0,diabeticsprices)" style="width:10%;"  src="cart-plus.svg"><img id="next" src="open.png" onclick="d1()"></span>
+        <div id="flex">
+            <p><u>Name</u> :</p>
+            <p><u>Price</u> :</p>
+        </div>
+        <div id="flex">
+        <p id="text3">Euglucon</p>
+        <p id="price3">14 </p>
+        </div> 
+    </div>
+        <!----------------------------------------------------------------------->
+        <div id="items1">
+            <h3><u>For hypertension</u> :</h3>
+            <img id="title4"  class="title" src="hyoer1.png"><span id="pn"><img id="pri" style="transform:rotate(-90deg);" onclick="h2()"  src="close.png"><img id="buy" onclick="buy(title40,img0,hyperprice)" style="width:10%;"  src="cart-plus.svg"><img id="next" src="open.png" onclick="h1()"></span>
+            <div id="flex">
+                <p><u>Name</u> :</p>
+                <p><u>Price</u> :</p>
+            </div>
+            <div id="flex">
+            <p id="text4">NORVASC</p>
+            <p id="price4">12 </p>
+            </div>
+        </div>
+         <!----------------------------------------------------------------------->
+         <div id="items1">
+            <h3><u>For Romatisme</u> :</h3>
+            <img class="title" id="title5" src="rom6.png"><span id="pn"><img id="pri" style="transform:rotate(-90deg);" onclick="r2()"  src="close.png"><img id="buy" onclick="buy(title50,img0,romprices)" style="width:10%;"  src="cart-plus.svg"><img id="next" src="open.png" onclick="r1()"></span>
+            <div id="flex">
+                <p><u>Name</u> :</p>
+                <p><u>Price</u> :</p>
+            </div>
+            <div id="flex">
+            <p id="text5">TORVACARD</p>
+            <p id="price5">14 </p>
+            </div>
+        </div>
+    
+    
+</div>
+<script>
+
+/*-----------------------------------------------------------------------*/
+    var i = 0 ;
+    var s=0;
+    var p=0;
+    var d=0,h=0,r=0;
+    var m=0;
+    var total = document.getElementById("paytotal");
+    var title0 = document.getElementById("title");
+    var title10 = document.getElementById("title1");
+    var title20 = document.getElementById("title2");
+    var title30 = document.getElementById("title3");
+    var title40 = document.getElementById("title4");
+    var title50 = document.getElementById("title5");
+    var img0= document.getElementsByClassName("img");
+
+    var img= [
+        "children_cold2.png",
+        "children cold3.png",
+        "childre_cold1.png"
+        
+    ];// array for cold and flu img
+    var text= [
+        "Congestal",
+        "Hyland's",
+        "Cold and flu"
+        
+    ];//array of title (cold)
+    var price= [
+        "20",
+        "20",
+        "20"
+        
+    ];//array of prices (cold)
+/*-----------------------------------------------------------------------*/
+var stomac=[
+    "children stomac2.png",
+    "children stomac3.png",
+    "stomach1.png"
+];//array for stomachache img
+var stomactext=[
+    "wellement oganic gripe water",
+    "scopinal",
+    "dentinox"
+];//array of title(stomachache)
+var stomacprices=[
+    "30",
+    "30",
+    "30"
+];//array of prices (stomachache)
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+var panadol=[
+    "panadol2.png",
+    "panadol3.webp",
+    "panadol1.png"
+];//array of panadol
+var panadoltext=[
+    "panadol 1-5",
+    "panadol 1month-5years",
+    "panadol for baby"
+];// array of title(panadol)
+var panadolprice=[
+    "15",
+    "15",
+    "15"
+];//array of prices (panadol)
+/*-----------------------------------------------------------------------------------------------------------------------------------*/
+var diabetics=[
+    "diabetics2.png",
+    "diabetics3.png",
+    "diabetics4.png",
+    "diabetics5.png",
+    "diabetics1.png"
+];//array for diabetics
+var diabeticstext=[
+    "Glugophage",
+    "Rybelsus",
+    "ACCU-CHEK",
+    "ON CALL PLUS",
+    "Euglucon"
+];//array of title(diabetics)
+var diabeticsprices=[
+    "14",
+    "14",
+    "14",
+    "14",
+    "14",
+];//array of prices(diabetics)
+/*-----------------------------------------------------------------------*/
+var hypertension=[
+    "hyper2.png",
+    "hyper3.png",
+    "hyper4.png",
+    "hyper5.png",
+    "hyper6.png",
+    "hyoer1.png"
+];//array for hypertension
+var hypertext=[
+    "Lasix",
+    "EXFORGEHCT",
+    "EXFORGE",
+    "ACETAB",
+    "ADENURIC",
+    "NORVASC"
+];//ARRAY OF TITLE FOR HYPERTENSION
+var hyperprice=[
+    "12",
+    "12",
+    "12",
+    "12",
+    "12",
+    "12"
+];// array of prices for hypertension
+/*-----------------------------------------------------------------------*/
+var rom=[
+    "rom3.png",
+    "rom4.png",
+    "rom5.png",
+    "rom1.png",
+    "rom6.png"
+  
+];//array for romatiz
+var romtext=[
+    "METHOREXA AL",
+    "SEREQUEL XR",
+    "PROXEN",
+    "TORVACARD",
+    "METHOTREXAT'EBEWE'",
+];//array of title for romatizm
+var romprices=[
+    "14",
+    "14",
+    "14",
+    "14",
+    "14"
+];//array of prices for romatizm
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+    function m1(){
+    i=i+1;
+    if(i==3)
+    i=0;
+    title0.src=img[i];
+    document.getElementById("text").textContent=text[i];
+    document.getElementById("price").textContent=price[i];
+}
+/*-----------------------------------------------------------------------*/
+function m2(){
+
+    if(i<=0)
+    i=3;
+    i=i-1;
+   title0.src=img[i];
+    document.getElementById("text").textContent=text[i];
+    document.getElementById("price").textContent=price[i];
+
+}
+/*-----------------------------------------------------------------------*/
+function take(){
+   window.open("credit.html");
+}
+/*-----------------------------------------------------------------------*/
+function buy(a,b,c) {
+    if (confirm("Do you want to buy this item?")) {
+        var image = a.src;
+        b[i+m].setAttribute("src", image);
+        b[i+m].style.width = "30%";
+        m++;
+
+        var add = parseFloat(c[i]); 
+        var currentTotal = parseFloat(total.textContent); 
+        var newTotal = currentTotal + add;
+        total.textContent = newTotal;
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------*/
+function s1(){
+    s=s+1;
+    if(s==3)
+    s=0;
+   title10.src=stomac[s];
+    document.getElementById("text1").textContent=stomactext[s];
+    document.getElementById("price1").textContent=stomacprices[s];
+}
+function s2(){
+
+if(s<=0)
+s=3;
+s=s-1;
+title10.src=stomac[s];
+document.getElementById("text1").textContent=stomactext[s];
+document.getElementById("price1").textContent=stomacprices[s];
+
+}
+/*-----------------------------------------------------------------------*/
+function p1(){
+    p=p+1;
+    if(p==3)
+    p=0;
+    title20.src=panadol[p];
+    document.getElementById("text2").textContent=panadoltext[p];
+    document.getElementById("price2").textContent=panadolprice[p];
+}
+function p2(){
+
+if(p<=0)
+p=3;
+p=p-1;
+title20.src=panadol[p];
+document.getElementById("text2").textContent=panadoltext[p];
+document.getElementById("price2").textContent=panadolprice[p];
+
+}
+/*-----------------------------------------------------------------------*/
+function d1(){
+    d=d+1;
+    if(d==5)
+    d=0;
+    if(d==1)
+    document.getElementById("title3").style.width="32%";
+    else if(d==2)
+    document.getElementById("title3").style.width="32%";
+    else if(d==3)
+    document.getElementById("title3").style.width="30%";
+    else 
+    document.getElementById("title3").style.width="40%";
+
+    title30.src=diabetics[d];
+    document.getElementById("text3").textContent=diabeticstext[d];
+    document.getElementById("price3").textContent=diabeticsprices[d];
+}
+function d2(){
+
+if(d<=0)
+d=5;
+d=d-1;
+if(d==1)
+    document.getElementById("title3").style.width="32%";
+    else if(d==2)
+    document.getElementById("title3").style.width="32%";
+    else if(d==3)
+    document.getElementById("title3").style.width="30%";
+    else 
+    document.getElementById("title3").style.width="40%";
+    
+title30.src=diabetics[d];
+document.getElementById("text3").textContent=diabeticstext[d];
+document.getElementById("price3").textContent=diabeticsprices[d];
+
+}
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+function h1(){
+    h=h+1;
+    if(h==6)
+    h=0;
+   title40.src=hypertension[h];
+    document.getElementById("text4").textContent=hypertext[h];
+    document.getElementById("price4").textContent=hyperprice[h];
+}
+function h2(){
+
+if(h<=0)
+h=6;
+h=h-1;
+title40.src=hypertension[h];
+document.getElementById("text4").textContent=hypertext[h];
+document.getElementById("price4").textContent=hyperprice[h];
+
+}
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+function r1(){
+    r=r+1;
+    if(r==5)
+    r=0;
+    title50.src=rom[r];
+    document.getElementById("text5").textContent=romtext[r];
+    document.getElementById("price5").textContent=romprices[r];
+}
+function r2(){
+
+if(r<=0)
+r=5;
+r=r-1;
+title50.src=rom[r];
+document.getElementById("text5").textContent=romtext[r];
+document.getElementById("price5").textContent=romprices[r];
+
+}
+/*-----------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------*/
+function open1(){
+    document.getElementById("card").style.display = "inline";
+}
+/*-----------------------------------------------------------------------*/
+function close1(){
+    document.getElementById("card").style.display ="none";
+}
+/*-----------------------------------------------------------------------*/
+document.getElementById("home").addEventListener("click",function(e){
+    window.open("home.html");
+});
+document.getElementById("children").addEventListener("click",function(e){
+    window.open("products.html");
+});
+document.getElementById("adult").addEventListener("click",function(e){
+    window.open("about.html");
+});
+document.getElementById("contact").addEventListener("click",function(e){
+    window.open("contact.html");
+});
+/*-----------------------------------------------------------------------*/
+</script>
+    </div>
+</body>
+</html>
